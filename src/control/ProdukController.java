@@ -29,7 +29,7 @@ public class ProdukController {
         if (p != null) {
             rs = this.koneksi.getData("select * from produk_07032 where id_produk =" + p.getId_produk());
         } else {
-            rs = this.koneksi.getData("select * from produk_07032");
+            rs = this.koneksi.getData("SELECT ID_PRODUK, NAMA_PRODUK, HARGA, STOK FROM FITRIARISQINAA_07032.LIST_PRODUK");
         }
 
         while (rs.next()) {
